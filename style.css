@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.menu-container {
+    height: 4rem;
+    background-color: rgb(67, 119, 51);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 0.5rem;
+}
+.menu-container >* {
+    height: 2rem;
+    background-color: white;
+}
+.font-size {
+    width: 5.7rem;
+}
+.font-family {
+    width: 10%;
+}
+.bui-container {
+    width: 10%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.align-container {
+    width: 10%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.color-container {
+    width: 8%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.formula-container {
+    height: 2rem;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.formula-container >* {
+    height: 70%;
+}
+.address-input {
+    width: 4rem;
+}
+.formula-input {
+    width: calc(100vw - 6rem );
+}
+.grid-container {
+    height: calc(100vh - (4rem + 2rem + 2rem));
+    background-color: rgba(179, 184, 179, 0.972);
+    overflow: auto;
+    position: relative;
+}
+.row {
+    display: flex;
+}
+.top-row {
+    width: calc( 100vh - 2rem);
+    height: 2rem;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    left: 2rem;
+    top: 0;
+}
+.left-box {
+    background-color: gray;
+} 
+.grid {
+    background-color: white;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+}
+.sheet-container {
+    height: 2rem;
+    display: flex;
+}
+.add-sheet-btn-container {
+    background-color: rgb(208, 214, 210);
+    height: 3rem;
+    width: 1.8rem;
+    border-right: 1px solid rgb(165, 170, 163);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sheet-list {
+    width: calc(100vw - 4rem);
+    display: flex;
+    background-color: rgb(208, 214, 210);
+    /* change width to min-width */
+    overflow: auto;
+}
+
+/* scroll, but hide the scroll bar */
+.sheet-list::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.sheet-list {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.sheet {
+    min-width: 5rem;
+    height: 100%;
+    background-color: rgb(206, 212, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(165, 170, 163);
+}
+.active {
+    background-color: white;
+}
+.box {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid rgb(138, 135, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell {
+    min-width: 4rem;
+    border: 1px solid rgb(192, 190, 190);
+    height: 2rem;
+    padding-top: 6px;
+}
+.active-btn {
+    background-color: rgb(135, 192, 173);
+}
